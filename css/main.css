@@ -7,14 +7,11 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-
-  min-height: 4000px;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
-  overflow: hidden;
 }
 
 .container-nav {
@@ -27,13 +24,14 @@ body {
   justify-content: space-around;
   height: 80px;
   border-bottom: 1px solid rgba(238, 238, 238, 0.425);
+  z-index: 4;
 }
 
 .logo h2 span {
-  font-size: 20px;
+  font-size: 15px;
 }
 .logo h2 {
-  font-size: 40px;
+  font-size: 25px;
 }
 .navbar {
   padding: 10px;
@@ -86,6 +84,20 @@ body {
   background: #00bbd4b9;
 }
 
+.container-nav.active * {
+  color: #555;
+}
+.container-nav.active {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container-nav.active .navbar .navbar-nav .nav-item .nav-link {
+  color: #555;
+}
+.container-nav.active .navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #00bcd4;
+}
+
 /*  */
 
 .banner {
@@ -130,7 +142,7 @@ body {
 .banner .content form {
   padding: 20px;
   margin: 10px;
-  width: 70%;
+  width: 800px;
   margin: auto;
 }
 .banner .content .form input {
@@ -165,7 +177,7 @@ body {
   transform: scale(0.9);
 }
 .banner .tld {
-  margin-left: -150px;
+  margin-left: -100px;
 }
 .banner .tld ul {
   list-style-type: none;
@@ -196,6 +208,7 @@ body {
 /*  */
 .service {
   padding-top: 150px;
+  padding-left: 20px;
 }
 .service span {
   font-size: 18px;
@@ -244,18 +257,113 @@ body {
 /* 
  */
 
+.pricing {
+  margin-bottom: 60px;
+}
+.pricing .bg-pricing {
+  background: url("../image/pricing-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 60px;
+  margin-top: 50px;
+}
+.pricing .bg-pricing div {
+  margin: auto;
+  width: 70%;
+}
+.pricing .bg-pricing p {
+  font-size: 16px;
+  color: #f7f7f7;
+}
+.pricing .content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pricing .content .card {
+  width: 350px;
+  min-height: 600px;
+  padding: 10px;
+  margin-top: -300px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.pricing .content h4 {
+  margin-top: 20px;
+  font-weight: 100;
+}
+.pricing .content .card .price {
+  background: #00bcd4;
+  color: #fff;
+  width: 200px;
+  height: 100px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pricing .content .card p {
+  color: #555;
+  font-size: 16px;
+  margin: 40px;
+}
+.pricing .content .card > ul {
+  text-align: left;
+  padding-bottom: 20px;
+}
+.pricing .content .card ul li {
+  padding: 10px;
+  margin: 10px;
+  list-style-position: inside;
+  font-size: 16px;
+  color: #555;
+}
+.pricing .content .card:nth-child(2) .price {
+  background: rgb(172, 30, 172);
+}
+.pricing .content .card:nth-child(2) {
+  background: linear-gradient(to top, #00bcd4, #fff);
+}
+.pricing .content .card:nth-child(3) .price {
+  background: rgb(214, 184, 14);
+}
+.pricing button {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #00bcd4;
+  color: #fff;
+  background: rgb(52, 52, 228);
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -20px;
+  left: 30%;
+}
+
+/*  */
+
 footer .content {
   color: #fff;
   display: flex;
   justify-content: space-between;
 }
- 
+
 footer .leftDiv {
   width: 300px;
   font-size: 14px;
 }
 footer {
-  padding-top:30px ;
+  padding-top: 30px;
   background-image: url("../image/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
