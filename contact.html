@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container-nav">
+      <div class="logo">
+        <a href="#">
+          <h2>Host <span>Cloud</span></h2>
+        </a>
+      </div>
+      <!--  -->
+      <div class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!--  -->
+      <div class="log-btn">
+        <ul>
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="banner about-us">
+      <div class="container">
+        <div class="content about-us">
+          <h2>Contact Us</h2>
+          <h5>Home / <span>Contact Us </span></h5>
+          <h5 id="discount"></h5>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="contact">
+      <div class="container">
+        <div class="content">
+          <div class="left">
+            <form id="contact" action="" method="post">
+              <div class="row">
+                <div class="">
+                  <fieldset>
+                    <input
+                      name="name"
+                      type="text"
+                      id="name"
+                      placeholder="Your name"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="">
+                  <fieldset>
+                    <input
+                      name="email"
+                      type="text"
+                      id="email"
+                      placeholder="Your email"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="">
+                  <fieldset>
+                    <input
+                      name="subject"
+                      type="text"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                  </fieldset>
+                </div>
+                <div class="">
+                  <fieldset>
+                    <textarea
+                      name="message"
+                      rows="6"
+                      id="message"
+                      placeholder="Your message"
+                      required=""
+                    ></textarea>
+                  </fieldset>
+                </div>
+                <div class="">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">
+                      Send Message
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="right">
+            <span>Contact Us </span>
+            <h1>Let's keep in touch</h1>
+            <p>
+              Quisque sagittis blandit sapien et elementum. Fusce pretium
+              viverra consequat. Aliquam at feugiat mi. Pellentesque hendrerit,
+              felis ac sodales commodo.
+            </p>
+            <hr />
+            <p>
+              <a href="mailto:contact@company.com"
+                >Email: contact@company.com</a
+              >
+            </p>
+            <p><a href="tel:010-020-0560">Tel: 010-020-0560</a></p>
+            <p>
+              <a href="index.html">Website: www.company.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="leftDiv">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>About Us</h2>
+              </div>
+              <p>
+                Aenean sit amet leo vitae tellus vehicula tincidunt vel sed
+                lorem. Nullam tincidunt commodo magna, id aliquam sapien
+                sollicitudin id.
+              </p>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Hosting Plans</h2>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#">Basic Cloud 5X</a></li>
+                <li><a href="#">Cloud VPS 10X</a></li>
+                <li><a href="#">Advanced Cloud</a></li>
+                <li><a href="#">Custom Designs</a></li>
+                <li><a href="#">Special Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>Useful Links</h2>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#">Cloud Hosting Platform</a></li>
+                <li><a href="#">Light Speed Zone</a></li>
+                <li><a href="#">Content Delivery Network</a></li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="footer-item">
+              <div class="footer-heading">
+                <h2>More Information</h2>
+              </div>
+              <ul class="footer-list">
+                <li>Phone: <a href="#">010-020-0560</a></li>
+                <li>Email: <a href="#">mail@company.com</a></li>
+                <li>Support: <a href="#">support@company.com</a></li>
+                <li>Website: <a href="#">www.company.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="sub-footer">
+            <p>
+              Copyright &copy; 2020 Cloud Hosting Company - Designed by Gazi
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+    <script>
+      var x;
+
+      do {
+        x = parseFloat(window.prompt("Enter Number 1-5 For get discount"));
+        if (x >= 1 && x <= 5) {
+          var rand = Math.random() * x;
+          document.querySelector("#discount").innerHTML =
+            "You get Discount " +
+            rand.toFixed(1) +
+            "%" +
+            "\n Your Id is " +
+            Math.floor(Math.random() * 10000);
+          break;
+        }
+      } while (true);
+    </script>
+  </body>
+</html>
